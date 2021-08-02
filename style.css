@@ -2,7 +2,7 @@
 :root {
     font-family: Helvetica ; 
     background-color: black;
-    color: white;
+    color: #ffffff;
 }
 
 /* Aquí va todo lo relacionado con el menú de navegación */
@@ -42,12 +42,14 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0.5em;
+    color: #ffffff;
 } 
 
 .titulos {
     display: flex;
     flex-wrap: wrap;
     margin: 0.5em;
+    color: #ffffff;
 }
 
 /* Carrusel de imágenes */
