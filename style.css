@@ -1,0 +1,260 @@
+@font-face {
+    font-family: "Authentic Sans";
+    font-style: normal;
+    font-weight: 90;
+    src: url('./AUTHENTICSans-90.woff') format('woff'),
+         url('./AUTHENTICSans-90.woff2') format('woff2'),
+         url('./AUTHENTICSans-90.of') format('otf');
+}
+:root {
+    background-color: black;
+    color: #ffffff;
+}
+
+/* Aquí va todo lo relacionado con el menú de navegación */
+.encabezado {
+    color: #ffffff ;	
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style-type: none;
+    margin: 0.5em;
+    padding:0.5em;
+    white-space: nowrap;
+    font-family: "Authentic Sans", Helvetica, sans-serif ; 
+}
+.encabezado li {
+
+    width: 0;
+    flex: 1 1 0;
+    font-size: 16px;
+}
+.encabezado li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* Aquí va todo lo relacionado con el formato del cuerpo */
+.indice {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0.5em;
+    margin-left: 200px;
+    color: #ffffff;
+    font-family: "Authentic Sans", Helvetica, sans-serif ; 
+} 
+
+  .indice li a {
+    text-decoration: none;
+    color: #ffffff;
+    max-width: 650px;
+    }
+
+  .indice li {
+    text-decoration: none;
+    color: #ffffff;
+    max-width: 650px;
+    }
+body p {
+    display: flex;
+    font-family: "Authentic Sans", Helvetica, sans-serif ; 
+    flex-wrap: wrap;
+    margin-right: 0.5em;
+    margin-left: 200px;
+    max-width: 650px;
+    color: #ffffff;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+    margin-bottom: 0em;
+    margin-top: 0.5em;
+}
+
+body a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+body h2 {
+    font-family: "Authentic Sans", Helvetica, sans-serif ; 
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    color: #ffffff;
+    letter-spacing: 0.11em;
+    line-height: 1em;
+    margin-top: 3em;
+    margin-bottom:0.35em;
+}
+
+body h3 {
+    font-family: "Authentic Sans", Helvetica, sans-serif ; 
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    color: #ffffff;
+    letter-spacing: 0.11em;
+    line-height: 1em;
+    margin-top: 2em;
+    margin-bottom: 0.35em;
+}
+
+/* Responsividad */
+
+@media (max-width: 800px) {
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+  }
+  .indice {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #ffffff;
+  } 
+  body p {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-left: 20px;
+    max-width: 650px;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  body h2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #ffffff;
+  }
+
+  body h3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #ffffff;
+  }
+}
+
+
+
+/* Carrusel de imágenes */
+
+ * {
+        box-sizing: border-box
+      }
+      body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+      }
+      .mySlides {
+        display: none
+      }
+      img {
+        vertical-align: middle;
+      }
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      /* Caption text */
+      .text {
+        color: #ffffff;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #ffffff;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #999999;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot:hover {
+        background-color: #111111;
+      }
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      @keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+          font-size: 11px
+        }
+      }
+
+
