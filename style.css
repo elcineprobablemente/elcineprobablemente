@@ -7,13 +7,13 @@
          url('./AUTHENTICSans-90.of') format('otf');
 }
 :root {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 /* Aquí va todo lo relacionado con el menú de navegación */
 .encabezado {
-    color: black ;	
+    color: white ;	
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -31,7 +31,7 @@
     font-size: 16px;
 }
 .encabezado li a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -42,19 +42,19 @@
     flex-wrap: wrap;
     margin-right: 0.5em;
     margin-left: 200px;
-    color: black;
+    color: white;
     font-family: "Authentic Sans", Helvetica, sans-serif ; 
 } 
 
   .indice li a {
     text-decoration: none;
-    color: black;
+    color: white;
     max-width: 650px;
     }
 
   .indice li {
     text-decoration: none;
-    color: black;
+    color: white;
     max-width: 650px;
     }
 body p {
@@ -64,7 +64,7 @@ body p {
     margin-right: 0.5em;
     margin-left: 200px;
     max-width: 650px;
-    color: black;
+    color: white;
     text-align: left;
     text-rendering: optimizeLegibility;
     font-kerning: normal;
@@ -74,7 +74,7 @@ body p {
 
 body a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 body h2 {
@@ -82,7 +82,7 @@ body h2 {
     display: flex;
     flex-wrap: wrap;
     margin-left: 200px;
-    color: black;
+    color: white;
     letter-spacing: 0.11em;
     line-height: 1em;
     margin-top: 3em;
@@ -94,7 +94,7 @@ body h3 {
     display: flex;
     flex-wrap: wrap;
     margin-left: 200px;
-    color: black;
+    color: white;
     letter-spacing: 0.11em;
     line-height: 1em;
     margin-top: 2em;
@@ -115,7 +115,7 @@ body h3 {
     flex-wrap: wrap;
     margin-right: 20px;
     margin-left: 20px;
-    color: black;
+    color: white;
   } 
   body p {
     display: flex;
@@ -123,7 +123,7 @@ body h3 {
     margin-right: 20px;
     margin-left: 20px;
     max-width: 650px;
-    color: black;
+    color: white;
     text-align: left;
   }
 
@@ -132,7 +132,7 @@ body h3 {
     flex-wrap: wrap;
     margin-left: 20px;
     margin-right: 20px;
-    color: black;
+    color: white;
   }
 
   body h3 {
@@ -140,7 +140,7 @@ body h3 {
     flex-wrap: wrap;
     margin-left: 20px;
     margin-right: 20px;
-    color: black;
+    color: white;
   }
 }
 
