@@ -135,6 +135,10 @@ body h4 {
     align-self: center;
     justify-content: center;
   }
+	.boton {
+	display: flex;
+	margin-left: 20px;
+}
   .indice {
     display: flex;
     flex-wrap: wrap;
