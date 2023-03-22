@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>El Cine Probablemente</title>
+<link rel="stylesheet" href="./style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+</head>
+
+<header>
+  <ul class="encabezado">
+      <li><a href="./index.html">El Cine Probablemente</a></li>
+      <li><a href="./actual.html">Número actual</a></li>
+      <li><a href="./anteriores.html">Números anteriores</a></li>
+      <li><a href="./comprar.html">Comprar</a></li>
+      <li><a href="./hojas-de-sala.html">Hojas de sala</a></li>
+      <li><a href="./contacto.html">Contacto</a></li>
+  </ul>
+</header>
+
+<br></br>
+
+<body>
+<div class="slideshow-container">
+      <div class="mySlides fade" style="text-align:right">
+        <img src="./1.jpg" style="width:50%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./2.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./3.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./4.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./5.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./6.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./7.jpg" style="width:100%">
+      </div> 
+      <div class="mySlides fade">
+        <img src="./8.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./9.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./10.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./11.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./12.jpg" style="width:50%">
+      </div>
+
+      <div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if(n > slides.length) {
+          slideIndex = 1
+        }
+        if(n < 1) {
+          slideIndex = slides.length
+        }
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for(i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
